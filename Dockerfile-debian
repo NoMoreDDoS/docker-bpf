@@ -1,0 +1,8 @@
+FROM debian:11
+RUN apt-get -y update
+RUN apt -y install libelf-dev libpcap-dev gcc-multilib build-essential linux-perf
+RUN apt -y install linux-headers-5.10.0-9-amd64
+RUN apt -y install gcc make g++
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt -y install pkg-config git
+RUN apt -y install clang-11 clang-tools-11 llvm-11*

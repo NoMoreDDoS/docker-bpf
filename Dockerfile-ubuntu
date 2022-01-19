@@ -1,0 +1,9 @@
+FROM ubuntu:bionic
+RUN apt-get -y update
+RUN apt -y install libelf-dev libpcap-dev gcc-multilib build-essential linux-tools-5.4.0-91-generic
+RUN apt -y install linux-headers-5.4.0-91-generic
+RUN apt -y install linux-tools-common linux-tools-generic
+RUN apt -y install gcc make g++
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt -y install pkg-config git
+RUN apt -y install clang-11 clang-tools-11 llvm-11*
