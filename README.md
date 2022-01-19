@@ -10,7 +10,7 @@ Pull:
 ## Building
 
 Build:
-`docker build . -t yourdockerhubname/docker-bpf`
+`docker build . -f Dockerfile-debian -t your-name/docker-bpf:debian && docker push your-name/docker-bpf:debian`
 
 
 Login to dockerhub:
